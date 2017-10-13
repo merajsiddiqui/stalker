@@ -1,10 +1,6 @@
+import sys
+sys.path.append("..")
+from searchengine.SearchParser import SearchParser
 
-from .searchengine.SearchParser import SearchParser
-
-class Crawl():
-	def __init__(self):
-		print "something"
-
-if __name__ == "main":
-	dat = SearchParser("google", "This is a source code")
-	print dat.parse()
+dat = SearchParser("google", "This is a source code")
+print dat.parse()
